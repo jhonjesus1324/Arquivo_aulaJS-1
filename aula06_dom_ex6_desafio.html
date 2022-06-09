@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+    <title>Curso Javascript Completo 2018</title>
+    <meta charset="UTF-8">
+   
+</head>
+<body>
+    <h1 id="titulo"> Titulo teste</h1>
+    <p class="paragrafo"><b>so mais um paragrafo</b></p>
+    <p class="paragrafo"><b>so mais um paragrafo</b></p>
+    <p class="paragrafo"><b>so mais um paragrafo</b></p>
+    <p class="paragrafo"><b>so mais um paragrafo</b></p>
+    <p class="paragrafo"><b>so mais um paragrafo</b></p>
+</body>
+<script>
+    document.querySelector("#titulo").textContent = "esse site foi hackeado por jonathan";
+
+    var paragrafo = document.querySelectorAll("p");
+
+    var x = 0;
+
+    while(paragrafo[x]){
+        paragrafo[x].textContent = x + " esse site foi hackeado por jonathan";
+        x++;
+    }
+</script>
+</html>
